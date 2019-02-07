@@ -19,12 +19,14 @@ import os
 from lipyd import lipproc
 from lipyd import name
 from ltp import results
+from ltp import ltproteins
 
 
 def reload():
     
     imp.reload(lipproc)
     imp.reload(name)
+    imp.reload(ltproteins)
     imp.reload(results)
 
 
