@@ -16,15 +16,17 @@
 import imp
 import os
 
-import ltp
-from ltp import main
-from ltp import table
+from lipyd import lipproc
+from lipyd import name
 from ltp import results
 
-imp.reload(table)
-imp.reload(results)
-imp.reload(main)
-imp.reload(ltp)
+
+def reload():
+    
+    imp.reload(lipproc)
+    imp.reload(name)
+    imp.reload(results)
+
 
 rr = results.ResultsReader(
     screen = 'invivo',
