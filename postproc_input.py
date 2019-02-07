@@ -26,14 +26,9 @@ imp.reload(results)
 imp.reload(main)
 imp.reload(ltp)
 
-
-r = ltp.ResultsReprocessor(
-    source_dir = '/home/denes/documents/ltp/processed_invivo',
-    mgfdir = '/home/denes/archive/ltp/mgf_invivo',
+rr = results.ResultsReader(
     screen = 'invivo',
+    new_layout = True,
 )
-
-r.rreader.export_df(
-    r.df,
-    os.path.join('data', 'invivo_postproc_input.tsv')
-)
+rr.main()
+rr.export()
