@@ -30,9 +30,6 @@ def reload():
     imp.reload(results)
 
 
-rr = results.ResultsReader(
-    screen = 'invivo',
-    new_layout = True,
-)
+rr = results.ResultsReader(screen = 'invivo')
 rr.main()
 rr.export()
