@@ -38,5 +38,4 @@ r = table.AsymmetricLookupReprocessor(
     da_upper  = 0.01,
 )
 
-#r.proteins = {'STARD10'}
 r.main()
