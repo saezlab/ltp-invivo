@@ -23,6 +23,7 @@ from lipyd import moldb
 from lipyd import mz
 from lipyd import mass
 from lipyd import formula
+from lipyd import session
 from ltp import results
 from ltp import ltproteins
 from ltp import settings as ltpsettings
